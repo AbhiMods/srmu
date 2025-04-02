@@ -1,0 +1,2181 @@
+.backdrop_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    z-index: 2
+}
+
+.tp_mob_options {
+    display: none
+}
+
+#banner_video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1903/720;
+    object-fit: cover
+}
+
+.Home_li span {
+    display: none
+}
+
+@media (max-width:1550px) {
+    html {
+        font-size: 15px
+    }
+}
+
+@media (max-width:1450px) {
+    .customer_reviews_wrapper {
+        margin: 0 1.5rem
+    }
+    .banner,
+    .ssb_wrap {
+        overflow: hidden
+    }
+}
+
+@media (max-width:1370px) {
+    .customer_reviews_wrapper {
+        margin: 0 3rem
+    }
+    .membership_table table thead th {
+        font-size: 12px
+    }
+    .testimonial_tab_btn .btn_yellow {
+        font-size: .825rem;
+        white-space: nowrap
+    }
+}
+
+@media (max-width:1330px) {
+    .points_wrap {
+        margin-right: 0
+    }
+    .points_wrap .font25 {
+        font-size: 1.3rem
+    }
+    .customer_reviews_wrapper {
+        margin: 0 6rem
+    }
+}
+
+@media (max-width:991px) {
+    body.menu_opend {
+        overflow: hidden
+    }
+    .menu_opend .backdrop_menu {
+        display: block
+    }
+    .menu_content {
+        min-width: 15rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 15rem;
+        height: 100vh;
+        margin-top: 2.65rem;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+        transform: translate(100%, 0)
+    }
+    .menu_content.active {
+        transform: translate(0, 0);
+        z-index: 5;
+        background: #fff;
+        box-shadow: 0 0 15px #0000004a
+    }
+    .close_menu {
+        background-color: var(--theme-color-dark);
+        display: inline-block;
+        padding: .5rem;
+        float: right;
+        width: fit-content;
+        margin: 1rem
+    }
+    .close_menu img {
+        height: 24px
+    }
+    .menu_content ul {
+        height: 100%;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        margin-top: 3rem;
+        overflow: auto;
+        width: 100%
+    }
+    .menu_content i {
+        display: none
+    }
+    .menu_content ul li a {
+        border-bottom: solid 1px #ccc;
+        padding: 1rem 1rem
+    }
+    header {
+        z-index: 999
+    }
+    header:not(.sml-header) .menu_content {
+        margin-top: 0
+    }
+    .top_list>li:first-child,
+    .top_list>li:first-child+li,
+    .top_list>li:first-child+li+li {
+        display: none
+    }
+    .top-header {
+        padding-inline: 1.2rem
+    }
+    .header_logo {
+        width: 15rem
+    }
+    .menu-toggler,
+    .user-toggler {
+        position: relative
+    }
+    .toggler_box {
+        position: absolute;
+        top: calc(var(--header-height));
+        right: 0;
+        transition: all ease .5s;
+        transform: translateY(5rem);
+        opacity: 0;
+        pointer-events: none
+    }
+    .toggler_box.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all
+    }
+    .search-toggler .toggler_box {
+        width: 100%;
+        padding: 1rem
+    }
+    .search-toggler .toggler_box .gsc-input-box {
+        padding: 0
+    }
+    .search-toggler .toggler_box .gsc-input-box #gs_tti50,
+    .search-toggler .toggler_box .gsc-input-box .gsib_a {
+        padding: 0 !important
+    }
+    .toggler_box.user_login {
+        top: 100%
+    }
+    .toggler_box .dropdown-menu {
+        display: block;
+        position: static
+    }
+    .bottom-header {
+        display: none
+    }
+    .mobile_menu_box .Home_li a {
+        height: auto !important
+    }
+    .mobile_menu_box {
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: var(--white);
+        z-index: 99;
+        padding: 1.5rem;
+        height: 100vh;
+        height: 100dvh;
+        transition: all ease .5s;
+        transform: translateX(100%);
+        overflow: auto
+    }
+    .mobile_menu_backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #00000075;
+        opacity: 0;
+        pointer-events: none;
+        transition: all ease .5s
+    }
+    body.menu-opened .mobile_menu_backdrop {
+        opacity: 1;
+        pointer-events: all
+    }
+    body.menu-opened .mobile_menu_box {
+        transform: translateX(0)
+    }
+    body>:not(header) {
+        overflow: hidden
+    }
+    .go_bottom_wrap,
+    .main_banner {
+        overflow: inherit
+    }
+    header {
+        box-shadow: 0 0 40px var(--black100)
+    }
+    .program_menu_main.active {
+        transform: translateX(0)
+    }
+    .header-nav {
+        position: fixed;
+        align-items: flex-start;
+        top: 0;
+        width: 17rem;
+        z-index: 9;
+        right: 0;
+        height: 100%;
+        background-color: var(--white);
+        transform: translate(100%, 0);
+        transition: .5s;
+        flex-direction: column
+    }
+    .top_nav>li>a {
+        color: var(--black);
+        display: block;
+        border-bottom: solid 1px #ccc
+    }
+    .bottom_header {
+        padding-inline: 0;
+        margin: 0;
+        padding: 1rem 0
+    }
+    .top_nav {
+        display: block;
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden
+    }
+    .menu_opend .backdrop {
+        display: block
+    }
+    [menu-dropdown_btn=program_menu] a {
+        pointer-events: none
+    }
+    .menu_icon {
+        display: block;
+        color: var(--white)
+    }
+    .close_menu {
+        display: block;
+        color: var(--black);
+        background-color: var(--theme-color)
+    }
+    body.menu_opend .header-nav {
+        transform: translate(0, 0)
+    }
+    .top_header {
+        background-color: var(--white)
+    }
+    .top_header .container {
+        padding: 0
+    }
+    .top_header [data-dropdown_btn=search] {
+        filter: invert(1);
+        opacity: .6
+    }
+    .top_header .list_right {
+        align-items: stretch
+    }
+    .right_side .list_right li {
+        display: flex;
+        align-items: center
+    }
+    .right_side .list_right :nth-child(2),
+    .right_side .list_right li:first-child {
+        display: none
+    }
+    .right_side .list_right :nth-child(3) {
+        border-left: solid 1px #ccc
+    }
+    .mobile_login_menu ul li a {
+        color: var(--black)
+    }
+    .mobile_login_menu {
+        display: block
+    }
+    .sml-header .backdrop {
+        top: var(--top-header-height)
+    }
+    .top_nav>.has_submenu>.sub_menu:after {
+        display: none
+    }
+    .close_menu_large {
+        display: block
+    }
+    .caret_icon {
+        display: none
+    }
+    .top_header .right_side {
+        position: static;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 1rem;
+        align-items: center
+    }
+    .top_header {
+        position: relative;
+        border: none
+    }
+    .sml-header {
+        background-color: var(--theme-color)
+    }
+    .ddp-click {
+        position: absolute;
+        top: .45rem;
+        right: .6rem;
+        padding: .5rem;
+        border: 1px solid #0000002e;
+        color: #616161;
+        cursor: pointer;
+        background-color: #00000008;
+        display: block
+    }
+    .caret_icon_mob {
+        position: absolute;
+        top: .45rem;
+        right: .6rem;
+        padding: .5rem;
+        border: 1px solid #0000002e;
+        color: #616161;
+        cursor: pointer;
+        background-color: #00000008;
+        display: block
+    }
+    .sub_menu {
+        position: static;
+        opacity: 1;
+        display: none;
+        pointer-events: all;
+        transform: none;
+        transition: none;
+        background-color: #00000036;
+        border-radius: 0
+    }
+    .has_submenu .sub_menu .sub_menu {
+        background-color: #00000036
+    }
+    .menu_icon_angle {
+        display: none
+    }
+    .program_menu_inner {
+        column-count: 2;
+        column-width: 190px
+    }
+    .program_menu_inner {
+        display: block
+    }
+    .top_header .left_side {
+        display: none
+    }
+    .right_side .list_right li a {
+        font-size: 1rem !important
+    }
+    .program_menu_main {
+        position: fixed;
+        top: 0;
+        z-index: 9;
+        border-radius: 0;
+        pointer-events: all;
+        left: 0;
+        transform: translateX(-100vw);
+        width: 100%;
+        height: calc(var(--vh, 1vh) * 100);
+        max-height: calc(var(--vh, 1vh) * 100);
+        overflow: auto;
+        z-index: 99;
+        padding: 2rem 1rem 3rem
+    }
+    .program_menu_inner {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .sml-header .program_menu_main {
+        top: var(--top-header-height)
+    }
+    .disciplines_menu {
+        width: auto
+    }
+    .search_wrapper {
+        border-radius: 0
+    }
+    .top_header .list_right:hover a {
+        opacity: 1
+    }
+    .right_side .list_right li a {
+        color: var(--white) !important
+    }
+    .bottom_header .d-flex {
+        align-items: center
+    }
+    .sml-header .header_logo img {
+        height: 35px
+    }
+    .sml-header .menu_icon {
+        color: var(--white)
+    }
+    .bannerSlider .banner_img {
+        object-fit: cover
+    }
+    .sml-header .header-nav {
+        top: var(--top-header-height);
+        height: 100vh
+    }
+    .adsSwiper img {
+        width: 100% !important
+    }
+    .home_ads .ads-pagination {
+        display: block
+    }
+    .programs_home_inner {
+        flex-wrap: wrap
+    }
+    .programs_home_inner .left_tab {
+        width: 100%
+    }
+    .programs_home_inner .programs_right {
+        width: 100%
+    }
+    .programs_tab {
+        display: flex;
+        overflow: auto;
+        margin-bottom: 2rem;
+        white-space: nowrap
+    }
+    .programs_tab li a {
+        min-width: auto;
+        padding: 1rem 3.5rem 1rem 2.5rem
+    }
+    .apply_inner .apply_right {
+        display: none
+    }
+    .innovation_culture_box {
+        padding: 2.313rem
+    }
+    .heading_box {
+        padding-bottom: 2rem !important
+    }
+    .placement_home {
+        padding-top: 0
+    }
+    .blog_home {
+        padding-top: 0
+    }
+    .course_cat_content_inner {
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+    .course_cat_content_inner .course_cat_content_box,
+    .course_cat_content_inner .course_cat_content_tab {
+        width: 100%
+    }
+    .show_hover {
+        position: static;
+        display: none
+    }
+    .show_hover.active {
+        display: block
+    }
+    .course_cat_content_inner .course_cat_content_box {
+        flex-wrap: wrap
+    }
+    .course_cat_home:after {
+        width: 100%
+    }
+    .course_cat_content_inner .course_cat_content_tab {
+        padding: 0;
+        margin-left: -1rem;
+        width: calc(100% + 2rem);
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-right: -3rem
+    }
+    .course_cat_content_tab ul {
+        flex-wrap: wrap;
+        position: relative;
+        overflow: auto
+    }
+    .course_cat_content_tab ul::-webkit-scrollbar {
+        width: .1px;
+        height: .1px
+    }
+    .course_cat_content_inner .course_cat_content_box .font50 {
+        font-size: 2.125rem
+    }
+    .course_cat_content_tab ul li {
+        padding: 0 .5rem;
+        white-space: nowrap
+    }
+    .course_cat_content_inner .course_cat_content_tab a,
+    .course_cat_content_inner .course_cat_content_tab li:nth-child(odd) a {
+        border: none;
+        display: block;
+        font-size: 1.2rem
+    }
+    .course_cat_content_tab {
+        position: relative
+    }
+    .course_cat_content_tab:after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: #f1f1f16e;
+        position: absolute;
+        bottom: 1px
+    }
+    .course_cat_content_inner .course_cat_content_tab a {
+        display: inline-block;
+        padding: 1rem .5rem;
+        padding-bottom: 1rem;
+        position: relative
+    }
+    .course_cat_content_inner .course_cat_content_tab li a.active:after {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: var(--theme-color-yellow);
+        content: '';
+        z-index: 1;
+        position: absolute
+    }
+    .course_cat_content_inner .course_cat_content_tab a.active {
+        background-color: transparent;
+        color: var(--theme-color-yellow)
+    }
+    .course_cat_home .container {
+        height: auto
+    }
+    .placement_home_inner {
+        overflow: auto
+    }
+    .placement_home_inner ul {
+        width: 200%
+    }
+    .footer_sections {
+        flex-wrap: wrap
+    }
+    .ftr_sec:last-child {
+        justify-content: space-between;
+        margin-top: 2rem
+    }
+    .bootom_menu_footer {
+        padding: 1rem 0
+    }
+    .bootom_menu_footer .row {
+        display: flex;
+        align-items: center
+    }
+    .top_box_wrap {
+        flex-wrap: wrap
+    }
+    .top_box_wrap .about_heading {
+        width: max-content;
+        margin-bottom: 2rem;
+        border-left: solid 6px var(--theme-color-yellow);
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+        padding-right: 0;
+        border-right: none
+    }
+    .top_box_wrap .content {
+        width: 100%;
+        margin-left: 0
+    }
+    .why_srmu {
+        flex-wrap: wrap
+    }
+    .why_srmu .why_srmu_head {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 3rem
+    }
+    .why_srmu .why_srmu_right {
+        width: 100%
+    }
+    .why_srmu .why_srmu_head:after {
+        display: none
+    }
+    .why_srmu_wrap {
+        padding-bottom: 5rem !important
+    }
+    .whysrmu-pagination {
+        transform: translateY(2rem)
+    }
+    .why_srmu_wrap .whysrmu_slider_btn {
+        display: none
+    }
+    .core_value_box_inner {
+        padding: 0
+    }
+    .core_value_box {
+        padding-right: 0
+    }
+    .core_value_box .images {
+        display: none;
+        position: static;
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 2rem;
+        padding-left: 0
+    }
+    .core_value_box_inner_text {
+        padding: 3rem 2rem 3rem;
+        padding-right: 2rem
+    }
+    .chancellor_bio_wrap {
+        padding-top: 0
+    }
+    .committees_inner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 20px
+    }
+    .top_footer .text {
+        padding-right: 0
+    }
+    .committees_cells_wrap {
+        padding-top: 0
+    }
+    .sharing_ideas_inner {
+        display: flex;
+        overflow: auto;
+        padding: 2px
+    }
+    .sharing_ideas_box {
+        min-width: 80%
+    }
+    .annual_fest_tab_data .annual_fest_right {
+        width: 100%
+    }
+    .annual_fest_tab_data .annual_fest_left {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 0
+    }
+    .annual_fest_tab_data .annual_fest_left .sec_head.font40 {
+        font-size: 1.5rem
+    }
+    .guest_lectures_box {
+        flex-wrap: wrap
+    }
+    .guest_lectures_box .title {
+        width: 100%
+    }
+    .guest_lectures_box .content {
+        width: 85%;
+        padding: 0
+    }
+    .guest_lectures_box .arrow {
+        width: 15%;
+        justify-content: flex-end;
+        display: flex
+    }
+    .guest_lectures_box .content .data_hidden {
+        width: 115%
+    }
+    .industrial_visits_box .industrial_visits_left {
+        width: 80%;
+        padding-right: 2rem
+    }
+    .industrial_visits_box .industrial_visits_right {
+        width: 20%
+    }
+    .industrial_hidden_inner {
+        display: flex;
+        white-space: nowrap;
+        overflow: auto
+    }
+    .industrial_hidden_inner .images {
+        min-width: 85%
+    }
+    .industrial_hidden_inner .images img {
+        height: 100%;
+        object-fit: cover
+    }
+    .tedx_ideas_wrap .d-flex {
+        display: block !important
+    }
+    .tedx_ideas_wrap .placement_slider_btn {
+        margin-bottom: 3rem
+    }
+    .institutes_list {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .mobile_pagination {
+        display: block
+    }
+    .customer_reviews_wrapper {
+        margin: 0
+    }
+    .customer_reviews_wrapper {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .dlg_content.fancybox-content {
+        max-width: 100%
+    }
+    .review_media_lg img {
+        max-width: 100%
+    }
+    .notable_alumni_wrap {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .notable_box .images img {
+        object-fit: cover
+    }
+    .committe_single_page .single_images {
+        flex-wrap: wrap
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .innovation_culture_box .innovation_culture_right {
+        display: none
+    }
+    .innovation_culture_box .innovation_culture_left {
+        width: 100%
+    }
+    .innovation_culture_box .heading_box {
+        margin-bottom: 0
+    }
+    .innovation_culture_box .innovation_culture_left {
+        padding-bottom: 0
+    }
+    .top_footer_inner {
+        justify-content: center;
+        flex-wrap: wrap
+    }
+    .top_footer_left {
+        margin-bottom: 1rem
+    }
+}
+
+@media (min-width:992px) and (max-width:1100px) {
+    .top_nav>li>a {
+        font-size: .813rem;
+        white-space: nowrap;
+        padding: 1.05rem .5rem 1.05rem
+    }
+    .header_logo {
+        margin-right: 1rem
+    }
+    .bottom_header .d-flex {
+        align-items: center
+    }
+    .bottom_header {
+        padding-inline: 2rem
+    }
+    .programs_tab li a {
+        min-width: 19.5rem;
+        padding: 1rem 3.5rem 1rem 2.5rem
+    }
+    .review_thum_img {
+        height: 9.5rem;
+        width: 9.5rem
+    }
+}
+
+@media (min-width:1100px) and (max-width:1220px) {
+    .top_nav>li>a {
+        padding: 1.05rem .8rem 1.05rem
+    }
+}
+
+.moreless-button.read_more {
+    display: none
+}
+
+@media (max-width:767px) {
+    body {
+        line-height: 1.2
+    }
+    html {
+        font-size: 14px
+    }
+    .common_control__wrap {
+        flex-wrap: wrap
+    }
+    .programs_sec_mob_inner {
+        margin-bottom: 3rem
+    }
+    .banner_wrapper {
+        flex-wrap: wrap
+    }
+    .banner_wrapper {
+        flex-direction: column-reverse
+    }
+    .arrow_connect,
+    .arrow_top {
+        display: none
+    }
+    .ftr_sec_intro {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 2rem
+    }
+    .footer_sections {
+        flex-wrap: wrap;
+        padding-block: 2.125rem
+    }
+    .ftr_sec {
+        flex: auto;
+        width: 50%;
+        padding-inline: 0;
+        padding-top: 1rem
+    }
+    .tp_right_content {
+        display: none
+    }
+    .tp_mob_options {
+        display: flex
+    }
+    .Home_li span {
+        display: block
+    }
+    .Home_li i {
+        display: none
+    }
+    .award_footer .award_list {
+        justify-content: flex-start
+    }
+    .fixed_whatsapp {
+        bottom: 125px
+    }
+    .bootom_menu_footer_wrap {
+        flex-wrap: wrap
+    }
+    .bootom_menu_footer_wrap .footer_col {
+        margin-bottom: 1rem
+    }
+    .bootom_footer_menu ul {
+        flex-wrap: wrap
+    }
+    .bootom_footer_menu ul li {
+        padding: 0 .5rem
+    }
+    .bootom_footer_menu ul li:first-child {
+        padding-left: 0
+    }
+    .go_bottom img {
+        display: none
+    }
+    .Home_li {
+        display: none !important
+    }
+    .heading_box .head_lg {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: .5rem
+    }
+    .facts_about ul {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        justify-content: flex-start;
+        margin-bottom: 2rem
+    }
+    .home_ads img {
+        max-width: 100%
+    }
+    .about_home .fixed_form_btn {
+        display: none
+    }
+    .sec_mob_tab {
+        padding-block: 1rem;
+        flex-wrap: nowrap;
+        overflow: auto;
+        margin-bottom: 1rem;
+        padding-bottom: 0
+    }
+    .innovation_culture_box {
+        padding: 3rem 2rem;
+        flex-wrap: wrap;
+        padding-bottom: 0
+    }
+    .innovation_culture_box .innovation_culture_left {
+        width: 100%
+    }
+    .innovation_culture_box .innovation_culture_right {
+        width: 100%
+    }
+    .innovation_culture_box .innovation_culture_right .images {
+        position: static;
+        display: none
+    }
+    .innovation_culture_box .innovation_culture_right .images img {
+        width: 100%;
+        height: auto
+    }
+    .innovation_culture_box .heading_box {
+        margin-bottom: 0
+    }
+    .innovation_culture_box .head_lg {
+        text-transform: capitalize
+    }
+    .blogSlider .home_blog_box .images {
+        height: 12.813rem
+    }
+    .about_home {
+        overflow: auto
+    }
+    .apply_mob_img {
+        margin-top: 1rem
+    }
+    .placement_home_inner ul li .placement_box .number {
+        font-size: 2.125rem !important
+    }
+    .slide_action li:last-child {
+        display: none
+    }
+    .apply_inner .apply_left {
+        max-width: 100%;
+        min-width: 100%
+    }
+    .apply_accordion_box {
+        width: 100%
+    }
+    .apply_mob_img img {
+        border-radius: 28px
+    }
+    .heading_box {
+        padding-bottom: 2rem !important
+    }
+    .placement_home_inner {
+        overflow: auto
+    }
+    .placement_home_inner ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap
+    }
+    .placement_home_inner ul li .placement_box {
+        width: 100%
+    }
+    .stay_with_us .container {
+        display: block
+    }
+    .fact_box_slider img {
+        display: none
+    }
+    .placement_box .swiper-pagination {
+        position: static;
+        padding: 1rem 0
+    }
+    .placement_home_inner ul li {
+        display: flex;
+        width: calc(50% - 1rem)
+    }
+    .apply_mob_img {
+        margin-top: 1rem
+    }
+    .placement_home_inner ul li:last-child {
+        width: calc(100% - 1rem)
+    }
+    .fact_box_slider .factSwiper,
+    .fact_box_slider .swiper-wrapper {
+        height: auto !important
+    }
+    .notable_home .slider_btn {
+        display: none
+    }
+    .notable_home .notable-paginatio {
+        display: block
+    }
+    .innovation_culture_box .innovation_culture_left {
+        padding-bottom: 2.313rem
+    }
+    .innovation_culture_left ul li a {
+        font-size: 1rem;
+        padding: .75rem 1.563rem .75rem 2.5rem
+    }
+    .innovation_culture_left ul li a:before {
+        left: 0
+    }
+    .testimonial_home .review-pagination {
+        display: block
+    }
+    .review_slider_btn {
+        display: none
+    }
+    .review_thum_img {
+        height: 8.5rem;
+        width: 8.5rem
+    }
+    .video_home {
+        padding-inline: 1.5rem
+    }
+    .video_home .video-pagination {
+        display: block
+    }
+    .video_home .slider_btn {
+        display: none
+    }
+    .top_footer_inner {
+        flex-wrap: wrap;
+        text-align: center
+    }
+    .top_footer_right {
+        display: block;
+        margin-top: 1.5rem;
+        width: 100%
+    }
+    .bootom_menu_footer .text-end {
+        text-align: left !important
+    }
+    .slide_action a {
+        writing-mode: horizontal-tb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        transform: rotate(0);
+        height: 100%;
+        padding: .8rem .8rem;
+        font-size: 1rem
+    }
+    .slide_action ul {
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        top: auto;
+        transform: translateY(0)
+    }
+    .home_blog_box:hover {
+        box-shadow: none
+    }
+    .common_padding {
+        padding: 3rem 0
+    }
+    .slide_action {
+        bottom: 0;
+        transform: translateY(0);
+        top: auto;
+        width: 100%;
+        left: 0
+    }
+    .slide_action li:first-child {
+        margin-bottom: 0
+    }
+    .slide_action li {
+        flex: 1;
+        text-align: center
+    }
+    .home_ads_btn {
+        display: none
+    }
+    .home_ads .ads-pagination {
+        display: block
+    }
+    .bootom_menu_footer {
+        padding: 2rem 0;
+        padding-block-end: 4rem
+    }
+    .vision_data_inner {
+        flex-wrap: wrap
+    }
+    .patents_wrap .vision_data_inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .vision_data_inner .vision_data_box {
+        min-width: 100%;
+        margin-bottom: 1rem;
+        padding: 0 .5rem
+    }
+    .founder_inner {
+        flex-wrap: wrap
+    }
+    .founder_inner>div {
+        width: 100%
+    }
+    .founder_inner>div:first-child {
+        margin-bottom: 2rem
+    }
+    .vision_data_content {
+        padding: 2rem
+    }
+    .top_footer .text {
+        font-size: 2rem
+    }
+    .chancellor_intro_text_box {
+        width: 100%;
+        padding-right: 0
+    }
+    .chancellor_intro_text_box .font32 {
+        font-size: 1.5rem;
+        margin-bottom: .8rem !important
+    }
+    .registar_box .load_more_leadersip_detail {
+        padding-top: .5rem !important;
+        display: block
+    }
+    .chancellor_intro_bg {
+        padding: 4rem 0 6rem 0
+    }
+    .chancellor_intro_bio_inner {
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+    }
+    .chancellor_intro_bio_inner .chancellor_image {
+        margin-top: -4rem
+    }
+    .chancellor_intro_bio_inner>div {
+        width: 100%
+    }
+    .chancellor_intro_bio_inner .bio_text {
+        padding-top: 1rem
+    }
+    .chancellor_bio_wrap .chancellor_bio_box:nth-child(2n) .chancellor_intro_bio_inner {
+        flex-direction: column-reverse
+    }
+    .registar_box {
+        flex-wrap: wrap;
+        padding: 2rem
+    }
+    .registar_box .registar_box_left {
+        width: 100%;
+        margin-bottom: 2rem
+    }
+    .registar_box .registar_box_right {
+        margin-left: 0;
+        width: 100%
+    }
+    .registar_box .registar_box_right .font24 {
+        margin-bottom: .5rem
+    }
+    .team_grid_inner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem
+    }
+    .committees_inner {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px 20px
+    }
+    .institutes_list {
+        display: block
+    }
+    .institutes_list li {
+        margin-bottom: 2rem
+    }
+    .institutes_info {
+        display: block
+    }
+    .institutes_box {
+        height: auto
+    }
+    .enquiry_form_left {
+        display: none
+    }
+    .enquiry_form_bg {
+        left: 0
+    }
+    .enquiry_form_inner .enquiry_form_right {
+        width: 100%
+    }
+    .committe_single_page img {
+        margin-right: 0;
+        margin-bottom: 2rem
+    }
+    .associations_inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .program_finder_form .custom_select {
+        margin-bottom: 1rem
+    }
+    .finder_box {
+        flex-wrap: wrap
+    }
+    .finder_box .right_side {
+        margin-left: 0;
+        margin-top: 2rem
+    }
+    .scholarship_scheme_tab .scholarship_tab_btn .title {
+        white-space: nowrap
+    }
+    .scholarship_scheme_tab .team_tab_btn {
+        flex-wrap: wrap
+    }
+    .scholarship_scheme_tab .team_tab_btn .title {
+        margin-bottom: .5rem
+    }
+    .placements_team_wrap {
+        padding-bottom: 0 !important
+    }
+    .scholarship_data_inner .font48 {
+        font-size: 1.6rem;
+        margin-bottom: .5rem !important
+    }
+    .scholarship_inner {
+        flex-wrap: wrap
+    }
+    .scholarship_inner .scholarship_left {
+        width: 100%;
+        margin-bottom: 1rem
+    }
+    .scholarship_inner .scholarship_right {
+        width: 100%;
+        overflow: auto;
+        margin-top: 2rem
+    }
+    .academic_facilities_wrap .slider_box .academic_btn {
+        width: 100%
+    }
+    .cafeteria_inner .cafeteria_left,
+    .cafeteria_inner .cafeteria_right {
+        width: 100%
+    }
+    .cafeteria_inner {
+        flex-wrap: wrap
+    }
+    .transportation_inner .transportation_left,
+    .transportation_inner .transportation_right {
+        width: 100%
+    }
+    .transportation_inner .transportation_left {
+        margin-bottom: 2rem
+    }
+    .research_director_inner {
+        flex-wrap: wrap
+    }
+    .research_director_left {
+        width: 100%
+    }
+    .research_director_right {
+        display: none
+    }
+    .council_ad_research_inner {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .research_add_box .research_add_top {
+        flex-direction: column
+    }
+    .research_add_inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .research_add_box {
+        min-width: 65%
+    }
+    .research_add_top .icon img {
+        margin-bottom: .5rem
+    }
+    .dep_data_table_table {
+        overflow: auto;
+        margin: 0 -2rem
+    }
+    .policies_research_wrap .slider_box {
+        width: 100%
+    }
+    .phd_ordinance_inner {
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+    }
+    .phd_ordinance_inner>div {
+        width: 100%
+    }
+    .phd_ordinance_left {
+        margin-top: 2rem
+    }
+    .want_check .font50 {
+        font-size: 2.125rem
+    }
+    .admission_imp_document {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%
+    }
+    .imp_pdf_inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .research_center_wrap:after {
+        width: 100%;
+        border-radius: 0
+    }
+    .research_center_inner {
+        margin-top: 0;
+        padding-bottom: 1rem;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .academic_facilities_box {
+        min-width: 85%;
+        height: auto
+    }
+    .innovation_council_inner {
+        flex-wrap: wrap
+    }
+    .research_center_inner .academic_facilities_info {
+        padding: 2.5rem 1.5rem 2.5rem 1.5rem
+    }
+    .innovation_council_inner>div {
+        width: 100%
+    }
+    .innovation_council_inner .right_content {
+        margin-top: 2rem
+    }
+    .publication_wrap {
+        margin: 0
+    }
+    .publication_workshop_inner {
+        flex-wrap: wrap;
+        padding: 2rem 2rem;
+        flex-direction: column-reverse
+    }
+    .publication_workshop_inner .publication_workshop_left,
+    .publication_workshop_inner .publication_workshop_right {
+        width: 100%
+    }
+    .publication_workshop_inner .publication_workshop_left {
+        margin-top: 2rem
+    }
+    .fee_structure_table.theme_table_inner {
+        overflow: inherit
+    }
+    .table_responsive {
+        overflow-x: auto;
+        padding: 0 1px
+    }
+    .publication_workshop_wrap {
+        margin-top: 0
+    }
+    .annual_fest_tab ul {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .annual_fest_tab ul li {
+        margin-bottom: 1rem
+    }
+    .conference_publication_wrap .slider_box .academic_btn {
+        width: 100%;
+        top: 30%
+    }
+    .annual_fest_tab ul li a {
+        height: 100%;
+        padding: .625rem 1rem
+    }
+    .conference_publication_wrap .academic_facilities_info {
+        padding: 2.5rem 1.5rem 2.5rem 1.5rem
+    }
+    .innovations_inner {
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        padding: 1.5rem
+    }
+    .innovations_inner .innovations_left,
+    .innovations_inner .innovations_right {
+        width: 100%
+    }
+    .innovations_inner .innovations_left {
+        margin-bottom: 2rem
+    }
+    .cms_page_content img {
+        max-width: 100%
+    }
+    .consultancy_table_box {
+        overflow: auto
+    }
+    .stay_with_inner ul {
+        overflow: auto;
+        flex-wrap: wrap;
+        display: flex
+    }
+    .testimonial_tab_btn {
+        overflow: auto
+    }
+    .drives_btn_wrap {
+        margin-top: 2rem
+    }
+    .stay_with_inner ul li {
+        min-width: 50%
+    }
+    .placement_goal_inner {
+        flex-wrap: wrap
+    }
+    .goal_slider_box_inner {
+        width: 100%;
+        margin-top: 2rem
+    }
+    .placement_goal_inner .theme-pagination {
+        transform: translateY(0);
+        margin-top: 2rem
+    }
+    .placement_title {
+        flex-wrap: wrap
+    }
+    .placement_title>div {
+        width: 100%
+    }
+    .placement_title .right {
+        margin-top: 1.5rem
+    }
+    .placement_records_data {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .testimonial_tab_inner .right_side {
+        display: none
+    }
+    .testimonial_tab_inner .left_side {
+        width: 100%
+    }
+    .testimonial_tab_slider_btn {
+        justify-content: flex-start
+    }
+    .rec_tab_btn {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        flex-wrap: wrap
+    }
+    .our_recruiters_slider {
+        margin-top: 2rem
+    }
+    responsibility_csr .rec_tab_btn a {
+        display: inline-block
+    }
+    .team_tab_btn .title {
+        white-space: nowrap
+    }
+    .placement_team_heading .d-flex {
+        display: block !important
+    }
+    .placement_team_heading .placement_slider_btn {
+        margin-top: 2rem
+    }
+    .counselling_wrap .d-flex {
+        display: block !important
+    }
+    .counselling_wrap .placement_slider_btn {
+        margin-top: 2rem
+    }
+    .CounsellingSwiper {
+        margin-top: 2.5rem
+    }
+    .our_recruiters {
+        border-radius: 0;
+        margin: 0
+    }
+    .director_msg_inner .director_msg_left {
+        width: 100%
+    }
+    .director_msg_inner .director_msg_right {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 2rem
+    }
+    .director_msg_inner .director_msg_left .dir_img {
+        height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0
+    }
+    .director_intro {
+        position: static;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0
+    }
+    .eligibility_criterion_content {
+        margin-right: 2rem;
+        margin-left: 2rem
+    }
+    .why_program_wrap .d-flex {
+        display: block !important
+    }
+    .why_program_wrap .faculty_slider_btn {
+        margin-top: 2rem
+    }
+    .cmapus_list_wrap {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start
+    }
+    .cmapus_list_wrap .camput_pro_box {
+        padding: .5rem;
+        border: solid 1px #ccc;
+        width: calc(50% - 20px)
+    }
+    .theme_table_inner {
+        overflow: auto
+    }
+    .cmapus_list_wrap .camput_pro_box img {
+        max-width: 75%
+    }
+    .cmapus_list_wrap .camput_pro_box .font20 {
+        font-size: 1.1rem
+    }
+    .theme_table {
+        border-spacing: 0 0rem
+    }
+    .scholarship_pro_inner .scholarship_left {
+        width: 100%
+    }
+    .scholarship_pro_inner {
+        flex-wrap: wrap
+    }
+    .scholarship_pro_inner .scholarship_left a {
+        display: none
+    }
+    .scholarship_pro_inner .scholarship_right {
+        width: 100%;
+        margin-top: 2rem
+    }
+    .department_inner {
+        flex-wrap: wrap
+    }
+    .department_left {
+        width: 100%;
+        height: auto !important
+    }
+    .department_right_wrapper {
+        width: 100%
+    }
+    .scholarship_table_inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .department_inner .department_img {
+        display: none;
+        width: 100%
+    }
+    .department_inner .department_mid {
+        width: 100%
+    }
+    .department_inner .department_mid {
+        padding-top: 0;
+        padding-bottom: 2rem
+    }
+    .scope_pro_heading .left {
+        width: 100%
+    }
+    .scope_pro_heading {
+        flex-wrap: wrap;
+        padding-bottom: 0
+    }
+    .scope_pro_heading .right {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem
+    }
+    .scope_wrap {
+        margin-block: 3rem;
+        padding: 3rem 2rem
+    }
+    .department_right {
+        flex-wrap: wrap;
+        opacity: 1;
+        min-width: 90%
+    }
+    .department_right:not(:first-child) {
+        position: static
+    }
+    .nav_list_department {
+        display: none
+    }
+    .higher_wrap .faculty_slider_btn {
+        width: 100%;
+        left: 0
+    }
+    .about_page_fact ul {
+        margin-inline: -2rem
+    }
+    .facts_about ul li {
+        padding-inline: 1rem;
+        width: 50%;
+        margin-bottom: 1rem;
+        flex: auto
+    }
+    .eligibility_criterion_area {
+        background-size: auto;
+        padding: 2.5rem 0
+    }
+    .facts_about ul .facts_about .yellow_number {
+        font-size: 1.5rem
+    }
+    .facts_about ul .facts_about .font22 {
+        font-size: 1rem
+    }
+    .theme_table td {
+        padding: 1.5rem
+    }
+    .theme_table_inner tr {
+        font-size: 1rem
+    }
+    .theme_table th {
+        padding: 1rem
+    }
+    .whysrmu_slider_btn {
+        margin-top: 2rem
+    }
+    .annual_fest_tab_data .annual_fest_left {
+        margin-bottom: 2rem
+    }
+    .team_tab_btn .title {
+        font-size: 1.1rem;
+        margin: 0 1rem
+    }
+    .career_list_wrap {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .notice_data_area {
+        padding: 2rem 2rem
+    }
+    .enquiry_info_inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .enquiry_form_wrap {
+        margin-top: 0
+    }
+    .director_board_inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .annual_fest_gallery {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .student_senate_inner {
+        flex-wrap: wrap
+    }
+    .student_senate_img {
+        width: 50%;
+        margin-bottom: 2rem
+    }
+    .student_senate_text_box {
+        padding-left: 0;
+        width: 100%
+    }
+    .student_senate_text_box .font60 {
+        font-size: 2.2rem
+    }
+    .senate_group_overview .senate_group {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .admissionenvirement_inner .admissionenvirement_left {
+        width: 100%
+    }
+    .admissionenvirement_inner {
+        flex-wrap: wrap
+    }
+    .admissionenvirement_right {
+        display: none
+    }
+    .grow_career {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .grow_career_wrap .sec_head.font35 {
+        font-size: 1.5rem
+    }
+    .advantage_wrap .d-flex {
+        display: block !important
+    }
+    .admission_overview_footer .top_graph_left,
+    .admission_overview_footer .top_graph_right,
+    .bottom_graph_left {
+        display: none
+    }
+    .grow_career_box .about_heading {
+        width: max-content
+    }
+    .iqac_facts_inner ul {
+        flex-wrap: wrap
+    }
+    .iqac_facts_inner ul li {
+        width: 100%;
+        margin-bottom: 1rem
+    }
+    .iqac_facts_inner ul li:first-child .iqac_facts_box_front {
+        border-radius: 15px 15px 15px 15px
+    }
+    .iqac_facts_box_front {
+        border-radius: 15px 15px 15px 15px
+    }
+    .iqac_facts_inner ul li:last-child .iqac_facts_box_front {
+        border-radius: 15px 15px 15px 15px
+    }
+    .green_initiative_wrap {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .admission_overview_footer .text_inner .content_lg {
+        font-size: 2rem
+    }
+    .admission_overview_footer .text_inner .content {
+        font-size: 2rem
+    }
+    .admission_overview_footer .text_inner .content p {
+        line-height: 1.2
+    }
+    .admission_overview_footer .bottom_graph_right {
+        display: none
+    }
+    .conatct_us_inner .enquiry_info_box {
+        min-width: 70%;
+        padding: 2rem 1rem;
+        width: calc(52% - 15px)
+    }
+    .enquiry_info_inner.conatct_us_inner {
+        gap: 15px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow: auto;
+        padding-bottom: .5rem
+    }
+    .enquiry_info_box .text a {
+        word-wrap: break-word
+    }
+    .contact_form_inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .contact_form_inner .contact_form_box {
+        margin-bottom: 2rem
+    }
+    .faq_list .question:after {
+        height: 10px;
+        width: 10px;
+        min-width: 10px
+    }
+    .faq_list>li .question {
+        display: flex;
+        align-items: center
+    }
+    .faq_list>li .question span {
+        padding-right: .5rem
+    }
+    .grievance_top_wrap {
+        padding-top: 0
+    }
+    .grievance_top_wrap .annual_fest_tab a {
+        white-space: nowrap
+    }
+    .grievance_top_wrap .annual_fest_tab ul {
+        flex-wrap: wrap;
+        overflow: auto
+    }
+    .econtent_top_wrap {
+        padding-bottom: 0 !important
+    }
+    .e-content_top_content .images {
+        margin-bottom: 2rem
+    }
+    .academic_video {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .grievance_inner {
+        flex-wrap: wrap
+    }
+    .grievance_inner>div {
+        width: 100%
+    }
+    .grievance_inner>div:first-child {
+        margin-bottom: 2rem
+    }
+    .select2-container {
+        overflow: visible !important;
+        width: 100%
+    }
+    .top_box_wrap .about_heading .sec_head {
+        font-size: 2rem
+    }
+    .scholarship_scheme_tab .placements_team_intro>.title {
+        font-size: 1.6rem
+    }
+    .title.font50.fw500 {
+        font-size: 1.6rem
+    }
+    .director_profile_data .title.font50 {
+        font-size: 2rem
+    }
+    .director_profile_inner {
+        flex-direction: column
+    }
+    .director_profile_inner .director_profile_data {
+        margin-top: 2rem;
+        width: 100%
+    }
+    .enquiry_form_right .font35 {
+        font-size: 2rem
+    }
+    .sec_head .font50 {
+        font-size: 2rem
+    }
+    .program_detail_title.font50 {
+        font-size: 2rem
+    }
+    .placements_team_intro .font50 {
+        font-size: 2rem
+    }
+    .sec_head.font45 {
+        font-size: 1.6rem
+    }
+    .sec_head.font40 {
+        font-size: 1.6rem
+    }
+    .program_detail_title .font30 {
+        font-size: 1.5rem;
+        padding-top: .5rem
+    }
+    .director_profile_inner .director_profile_data:last-child .fw500 {
+        margin-bottom: 1rem
+    }
+    .institutes_department {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0
+    }
+    .inner_banner:before {
+        background-color: rgba(0, 0, 0, .5);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+    .sec_head.font50 {
+        font-size: 1.6rem
+    }
+    .innovations_wrap {
+        padding-top: 0 !important
+    }
+    .club_list_wrap {
+        padding-top: 0 !important
+    }
+    .club_list_wrap .theme_model_box {
+        flex-wrap: wrap
+    }
+    .club_list_wrap .theme_model_box .model_img {
+        width: 100%;
+        margin-bottom: 1.5rem
+    }
+    .club_list_inner .club_list_left {
+        width: 100%;
+        margin-right: 0
+    }
+    .club_list_inner .club_list_right {
+        width: 100%
+    }
+    .club_list_wrap .theme_model_box .model_data {
+        width: 100%
+    }
+    .club_list_wrap .sharing_ideas_inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .stay_with_inner p {
+        line-height: 1.2
+    }
+    .stay_with_inner .sec_head.font50 {
+        font-size: 2rem
+    }
+    .stay_facts_box .number.font60 {
+        font-size: 2rem
+    }
+    .goal_slider_box .placement_goal_box {
+        border: solid 1px var(--theme-color-yellow)
+    }
+    .ftr_social_icons {
+        margin-bottom: 2rem
+    }
+    .rec_company_program .rec_tab_btn {
+        justify-content: flex-start;
+        margin-top: 3rem;
+        margin-bottom: 0
+    }
+    .rec_company_program .rec_tab_btn>a:first-child {
+        margin-bottom: 1.5rem
+    }
+    .ftr_sec .menu_box_footer:last-child .f_menu {
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+    .get_award_inner .council_ad_research_title {
+        width: 100%;
+        display: none;
+        position: static
+    }
+    .get_award_inner {
+        padding-left: 0;
+        justify-content: space-around;
+        padding-bottom: 2rem
+    }
+    .get_award_inner .get_award_box:nth-child(2) {
+        display: none
+    }
+    .get_award_inner .get_award_box {
+        width: calc(50% - 20px)
+    }
+    .get_award_box {
+        padding: 4rem 1rem 1rem
+    }
+    .get_award_box .images {
+        width: 7.813rem;
+        height: 7.813rem
+    }
+    .get_award_wrap {
+        margin: 0
+    }
+    .get_award_wrap {
+        padding: 3rem 1rem
+    }
+    .council_ad_research_title_mob {
+        display: block
+    }
+    .ptv_video_wrap {
+        flex-wrap: wrap
+    }
+    .ptv_video_left {
+        width: 100%;
+        padding-right: 0
+    }
+    .ptv_video_right {
+        width: 100%
+    }
+    .ptv_video:after {
+        height: 100%
+    }
+    .student_senate_img:before {
+        display: none
+    }
+    .institute_vision_mission_box .images {
+        display: none
+    }
+    .institute_vision_mission_box_inner {
+        padding-right: 0
+    }
+    .institute_vision_mission_box {
+        padding-right: 0
+    }
+    .institute_vision_mission_box_inner_text {
+        padding: 4rem 2rem 3rem;
+        padding-right: 2rem
+    }
+    .institute_vision_btn a:first-child {
+        margin-right: 1rem
+    }
+    .institute_vision_btn {
+        margin-top: 3rem
+    }
+    .institute_vision_mission_box_inner .sec_head.font50 {
+        font-size: 1.5rem
+    }
+    .grid_card_intro .font15.name {
+        font-size: 1.2rem
+    }
+    .dept_single_mission {
+        flex-wrap: wrap
+    }
+    .dept_single_mission>div {
+        width: 100%
+    }
+    .dept_single_mission>div:first-child {
+        margin-bottom: 1rem
+    }
+    .director_profile_inner .director_profile_img {
+        width: 100%
+    }
+    .director_profile_data .title {
+        margin-bottom: 1rem
+    }
+    .director_profile_data .des {
+        margin-bottom: 1rem
+    }
+    .fee_tab_wrap .fee_tab {
+        justify-content: flex-start;
+        overflow: auto;
+        flex-wrap: nowrap
+    }
+    .fee_tab_wrap .fee_tab a {
+        white-space: nowrap
+    }
+    .fee_tab_wrap {
+        overflow: hidden
+    }
+    .fee_tab_wrap {
+        padding: .4rem 0
+    }
+    .faculty_list_wrap .facultylist-pagination {
+        transform: translateY(0);
+        margin-top: 2rem
+    }
+    .key_hightlight_wrap .d-flex {
+        flex-wrap: wrap
+    }
+    .faculty_slider_btn {
+        margin-bottom: 1rem
+    }
+    .home_blog_inner {
+        margin-bottom: 0
+    }
+    .sports_gallery_box {
+        margin-bottom: 1.5rem
+    }
+    .sports_gallery .sports_gallery_box img {
+        height: auto
+    }
+    .sports_gallery {
+        display: block
+    }
+    .meeeting_frequency_data {
+        flex-wrap: wrap
+    }
+    .meeeting_frequency_data .meeeting_frequency_left {
+        width: 100%
+    }
+    .meeeting_frequency_data .meeeting_frequency_right {
+        display: none
+    }
+    .senate_document_inner .senate_document_box {
+        width: 100%
+    }
+    .scholarship_scheme_tab .placements_team_intro>.title {
+        font-size: 2.2rem
+    }
+    .working_hour_inner .left_content {
+        width: 100%;
+        padding: 2rem 2rem
+    }
+    .working_hour_inner {
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+    }
+    .working_hour_inner .right_images {
+        width: 100%
+    }
+    .apply_bg_sec .circle_box {
+        display: none
+    }
+    .apply_bg_sec svg {
+        display: none
+    }
+    .process_box_data {
+        position: static;
+        border-bottom: solid 1px #ccc;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        transform: translate(0);
+        max-width: 100%
+    }
+    .process_box_data .icon {
+        margin-bottom: 2rem
+    }
+    .apply_sec_main .sec_head {
+        margin-bottom: 4rem
+    }
+    .sm_svg {
+        display: block
+    }
+    .lg_svg {
+        display: none
+    }
+    .svg_text_data {
+        line-height: 40px
+    }
+    .svg_text_data * {
+        font-size: 2rem
+    }
+    .f_menu {
+        border: none
+    }
+    .bootom_menu_footer .font16 {
+        font-size: .9rem
+    }
+    .facts_csr {
+        display: flex;
+        flex-wrap: wrap
+    }
+    .facts_csr_wrap .number {
+        font-size: 2.5rem
+    }
+    .facts_csr_box .icon img {
+        height: 65px
+    }
+    .csr_initiatives_inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .responsibility_csr {
+        flex-wrap: wrap
+    }
+    .responsibility_csr_right {
+        display: none
+    }
+    .empowerment_believe_text .font50 {
+        font-size: 2rem
+    }
+    .fact_empowerment_text ul {
+        flex-wrap: wrap;
+        gap: 20px
+    }
+    .fact_empowerment_text ul li {
+        margin-right: 0
+    }
+    .fact_empowerment_text .number {
+        font-size: 2.5rem
+    }
+    .initiatives_empowerment_inner {
+        margin-top: 2rem;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .convocation_lg_cta_content {
+        width: 100%
+    }
+    .convocation_lg_cta {
+        padding: 1rem;
+        height: 22rem;
+        margin-bottom: 2rem;
+        margin-top: -2rem
+    }
+    .convocation_gallery {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .faculty_event_wrap .home_blog_left .home_blog_box {
+        width: 100%;
+        flex-wrap: wrap
+    }
+    .home_blog_left .home_blog_box .images {
+        width: 100%;
+        margin-right: 0
+    }
+    .faculty_event_wrap .home_blog_left .home_blog_box .content {
+        width: 100%
+    }
+    .research_dep_data_table .dep_data_table_table table tr th:first-child {
+        display: none
+    }
+    .research_dep_data_table .dep_data_table_table table tbody tr td:first-child {
+        display: none
+    }
+    .scholarship_scheme_tab .team_tab_btn .title {
+        border: solid 2px transparent;
+        border-radius: 8px;
+        padding: .8rem
+    }
+    .scholarship_scheme_tab .team_tab_btn .title.active {
+        border: solid 2px var(--white)
+    }
+    .recruiters_logo_box {
+        padding: .5rem
+    }
+    .top_box_wrap_program .top_box_wrap p:not(:first-child) {
+        display: none
+    }
+    .testimonial_tab_btn .btn_yellow {
+        white-space: break-spaces
+    }
+    .moreless-button.read_more {
+        text-decoration: underline;
+        color: var(--theme-color-light);
+        font-weight: 600;
+        display: block
+    }
+    .top_box_wrap_program .content.active p {
+        display: block
+    }
+    .customer_reviews_wrapper {
+        margin: 0
+    }
+    .customer_reviews_wrapper {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .dlg_content.fancybox-content {
+        max-width: 100%
+    }
+    .review_media_lg img {
+        max-width: 100%
+    }
+    .notable_alumni_wrap {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .notable_box .images img {
+        object-fit: cover
+    }
+}
